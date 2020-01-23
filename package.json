@@ -1,0 +1,21 @@
+{
+  "name": "Lab-04-Data-Modeling",
+  "version": "1.0.0",
+  "description": "",
+  "main": "memory-data-model.js",
+  "scripts": {
+    "test": "jest --verbose",
+    "test-watch": "jest --watchAll --verbose"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/401-advanced-javascript-Nawal/Lab-04-Data-Modeling.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/401-advanced-javascript-Nawal/Lab-04-Data-Modeling/issues"
+  },
+  "homepage": "https://github.com/401-advanced-javascript-Nawal/Lab-04-Data-Modeling#readme"
+}
