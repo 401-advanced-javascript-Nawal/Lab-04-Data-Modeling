@@ -1,11 +1,11 @@
 {
   "name": "Lab-04-Data-Modeling",
   "version": "1.0.0",
-  "description": "",
+  "description": "## Classes - Data Modeling",
   "main": "memory-data-model.js",
   "scripts": {
-    "test": "jest --verbose",
-    "test-watch": "jest --watchAll --verbose"
+    "lint": "eslint**/*.js",
+    "test": "jest --verbose --coverage"
   },
   "repository": {
     "type": "git",
@@ -17,5 +17,8 @@
   "bugs": {
     "url": "https://github.com/401-advanced-javascript-Nawal/Lab-04-Data-Modeling/issues"
   },
-  "homepage": "https://github.com/401-advanced-javascript-Nawal/Lab-04-Data-Modeling#readme"
+  "homepage": "https://github.com/401-advanced-javascript-Nawal/Lab-04-Data-Modeling#readme",
+  "dependencies": {
+    "jest": "^25.1.0"
+  }
 }
