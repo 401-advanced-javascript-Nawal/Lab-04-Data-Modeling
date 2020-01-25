@@ -15,3 +15,5 @@ class Products extends DataModel {
         }
     } // end of constructor function 
 } // end of Products class 
+
+module.exports = Products ;
