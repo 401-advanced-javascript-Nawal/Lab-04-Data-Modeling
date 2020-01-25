@@ -92,7 +92,6 @@ validator.objectLevels = function (input) {
 */
 validator.inputKeys = function (input) {
   if (Object.keys(input)) { return true };
-  return false;
 };
 
 /**
