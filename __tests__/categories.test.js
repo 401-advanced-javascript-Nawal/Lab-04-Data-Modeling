@@ -1,6 +1,7 @@
 'use strict';
 
 const Categories = require('../categories/categories.js');
+const validator = require('../validator.js');
 
 describe('Categories Model', () => {
 
@@ -64,4 +65,17 @@ describe('Categories Model', () => {
       })
       .catch(e => console.error('ERR', e));
   }); // end of delete method 
-}); // end of Categories Model
+
+
+//   /******************************* Other Tests ********************************/
+//   describe('Validate Test for Datatypes ', () => {
+
+//     let obj = { name: 'Test Category' };
+
+//     it('Objects ', () => {
+//       validator.isObject(obj).toEqual('object');
+//     });
+
+//   }); // end of describe test for DataType
+
+// }); // end of Categories Model
