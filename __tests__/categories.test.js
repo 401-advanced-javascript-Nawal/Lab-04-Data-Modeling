@@ -37,19 +37,29 @@ describe('Categories Model', () => {
     let obj = { name: 'Test Category' };
     return categories.create(obj)
       .then(record => {
-        return categories.update(record._id,record)
+        categories.get(record)
+        categories.update(record._id,record)
           .then(category => {
             Object.keys(obj).forEach(key => {
               expect(category[key]).toEqual(obj[key]);
             })
           })
-      });
+      })
+      .catch(e => console.error('ERR', e));
   }); // end of update method 
 
   it('can delete() a category', () => {
-
-
+    let obj = { name: 'Test Category' };
+    return categories.create(obj)
+      .then(record => {
+        categories.get(record)
+        categories.delete(record._id)
+          .then(category => {
+            Object.keys(obj).forEach(key => {
+              expect(category[key]).toEqual(obj[key]);
+            })
+          })
+      })
+      .catch(e => console.error('ERR', e));
   }); // end of delete method 
-
-
 }); // end of Categories Model
